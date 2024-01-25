@@ -1,0 +1,205 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#page1{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    /* margin-top: 2px; */
+}
+#nav-part1{
+    width: 60%;
+    height: 100px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+}
+#nav-part1 h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+#nav-part2{
+    width: 55%;
+    height: 100px;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* gap: 2px; */
+}
+#nav img{
+    height: 120px;
+    /* width: 10%; */
+    left: 50%;
+    transform: translateX(-50%);
+}
+#nav-part2 button{
+    padding: 12px 10px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: black;
+    border: none;
+    color: #fff;
+    gap:2px;
+}
+#nav-part2 button:nth-child(1){
+    background-color: transparent;
+    color: #000;
+}
+#content{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: aqua; */
+    padding-top: 110px ;
+}
+#content h3{
+background-color: #F2B0EA;
+padding: 6px 12px;
+/* text-align: center; */
+width: fit-content;
+border-radius: 50px;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+font-size: 18px;
+}
+#content h1{
+    padding: 4px 7px ;
+    width: fit-content;
+    font-size: 65px;
+    /* font-weight: 500; */
+    /* left: 30%; */
+    transform: translateX(+55%);
+    text-align: center;
+    margin: 15px 0;
+}
+#content h4{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 350;
+}
+#content button{
+    font-size: 28px;
+    border-radius: 75px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: black;
+    font-weight: 400;
+    /* padding-bottom: 2px; */
+}
+
+#bottom{
+    /* background-color: yellow; */
+    height: 380px;
+    width: 100%;
+    /* padding-top: 15px; */
+    /* padding: 4px; */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* This is used for hiding the scroll bar */
+#bottom::-webkit-scrollbar{
+    display:none;
+}
+.elem{
+    position: relative;
+    height: 100%;
+    width: 310px;
+    /* background-color: brown; */
+    /* border: 2px solid black; */
+    flex-shrink: 0;
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    object-position: center;
+    gap: 5px;
+}
+/* @keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+} */
+
+#page2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 60px;
+    padding-top: 80px;
+}
+#page2 h1{
+    text-align: center;
+    font-weight: 350;
+
+}
+.box{
+    height: 275px;
+    width: 330px;
+    /* background-color: yellow; */
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    /* align-items: center;
+    justify-content: space-between; */
+    margin: 13px;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page2 button{
+    color: black;
+    font-size: 25px;
+    font-family: 500;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+#page3{
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* padding: 50px 100px; */
+    padding-top: 150px;
+    text-align: center;
+}
+
+#page3 h1{
+    text-align: center;
+}
